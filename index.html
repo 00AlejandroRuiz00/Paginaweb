@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Personal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Blog Personal</h1>
+  </header>
+  <div class="container">
+    <h2>Artículos</h2>
+    <div id="articles"></div>
+    <button id="addArticleBtn">Agregar artículo</button>
+  </div>
+
+  <!-- Formulario para agregar artículo -->
+  <div id="articleForm" class="container hidden">
+    <h2>Agregar Artículo</h2>
+    <form id="addArticleForm">
+      <div>
+        <label for="title">Título:</label>
+        <input type="text" id="title" required>
+      </div>
+      <div>
+        <label for="imageURL">URL de la imagen:</label>
+        <input type="url" id="imageURL" required>
+      </div>
+      <div>
+        <label for="description">Descripción:</label>
+        <textarea id="description" required></textarea>
+      </div>
+      <div>
+        <label for="author">Autor:</label>
+        <input type="text" id="author" required>
+      </div>
+      <div>
+        <label for="date">Fecha de publicación:</label>
+        <input type="date" id="date" required>
+      </div>
+      <button type="submit">Publicar</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
